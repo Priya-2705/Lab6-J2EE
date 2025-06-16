@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Available Charging Stations</title>
+</head>
+<body>
+    <h1>Available Charging Stations</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th><th>Name</th><th>Location</th><th>Availability</th><th>Charging Speed (kW)</th>
+        </tr>
+        <tr th:each="station : ${stations}">
+            <td th:text="${station.id}"></td>
+            <td th:text="${station.name}"></td>
+            <td th:text="${station.location}"></td>
+            <td th:text="'Available'" style="color:green;"></td>
+            <td th:text="${station.chargingSpeed}"></td>
+        </tr>
+    </table>
+</body>
+</html>

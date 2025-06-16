@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="charge-station-ear-1.0-SNAPSHOT">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
+        <dependent-module archiveName="com.charge.station-charge-station-ejb-1.0-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/charge-station-ejb/charge-station-ejb">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework-spring-context-5.3.30.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/springframework/spring-context/5.3.30/spring-context-5.3.30.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework-spring-aop-5.3.30.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/springframework/spring-aop/5.3.30/spring-aop-5.3.30.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework-spring-beans-5.3.30.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/springframework/spring-beans/5.3.30/spring-beans-5.3.30.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework-spring-core-5.3.30.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/springframework/spring-core/5.3.30/spring-core-5.3.30.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework-spring-jcl-5.3.30.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/springframework/spring-jcl/5.3.30/spring-jcl-5.3.30.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework-spring-expression-5.3.30.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/springframework/spring-expression/5.3.30/spring-expression-5.3.30.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.charge.station-charge-station-web-1.0-SNAPSHOT.war" deploy-path="/" handle="module:/resource/charge-station-web/charge-station-web">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

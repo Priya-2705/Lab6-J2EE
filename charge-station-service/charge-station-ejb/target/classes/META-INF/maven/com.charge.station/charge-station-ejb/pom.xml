@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.charge.station</groupId>
+		<artifactId>charge-station-service</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<groupId>com.charge.station</groupId>
+	<artifactId>charge-station-ejb</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>ejb</packaging>
+	<name>charge-station-ejb</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<dependencies>
+	<!-- Spring Context -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-context</artifactId>
+		<version>5.3.30</version>
+	</dependency>
+
+	<!-- Jakarta EJB API (Needed for @Stateless, etc.) -->
+	<dependency>
+		<groupId>jakarta.ejb</groupId>
+		<artifactId>jakarta.ejb-api</artifactId>
+		<version>4.0.1</version>
+		<scope>provided</scope>
+	</dependency>
+
+	<!-- Jakarta Persistence API (Already included by you) -->
+	<dependency>
+		<groupId>jakarta.persistence</groupId>
+		<artifactId>jakarta.persistence-api</artifactId>
+		<version>3.1.0</version>
+		<scope>provided</scope>
+	</dependency>
+
+	<!-- JUnit for Testing -->
+	<dependency>
+		<groupId>org.junit.jupiter</groupId>
+		<artifactId>junit-jupiter</artifactId>
+		<version>5.9.3</version>
+		<scope>test</scope>
+	</dependency>
+</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M9</version>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,4 @@
+org\charge\station\ejb\App.class
+org\charge\station\ejb\service\ChargingStationService.class
+org\charge\station\ejb\model\ChargingStation.class
+org\charge\station\ejb\service\ChargingStationServiceRemote.class

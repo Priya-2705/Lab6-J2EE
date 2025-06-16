@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+  <deployment>
+    <dependencies>
+      <module name="javax.api"/>
+      <module name="javax.servlet.api" export="true"/>
+      <module name="javax.servlet.jsp.api" export="true"/>
+      <module name="javax.el.api"/>
+    </dependencies>
+  </deployment>
+</jboss-deployment-structure>
